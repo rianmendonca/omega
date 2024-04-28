@@ -4,7 +4,7 @@
 :root {
     --black-color: #000000;
     --white-color: #ffffff;
-    --yellow-color: #FFBD40;
+    --yellow-color: #F1B33D;
     --gap: 3rem;
 }
 
@@ -21,6 +21,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 h1,
@@ -61,7 +62,7 @@ a {
 }
 
 .primary-bg {
-    background-image: url('../img/main-bg.svg');
+    background-image: url('../img/primary-bg.svg');
     background-size: cover;
     background-position: center center;
     color: var(--white-color)
@@ -89,6 +90,7 @@ a {
     left: 0;
     right: 0;
     width: 100%;
+    z-index: 1;
     border-bottom: 0.1rem solid var(--black-color);
 }
 
@@ -138,4 +140,35 @@ a {
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.menu-spacing {
+    height: 5.8rem;
+}
+
+.about-content {
+    position: relative;
+    top: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.about-text,
+.about-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.about-text h2 {
+    font-size: 7rem;
+    margin-bottom: 5rem;
+    line-height: 1;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
 }
