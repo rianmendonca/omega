@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
 
 :root {
     --black-color: #000000;
     --white-color: #ffffff;
     --yellow-color: #F1B33D;
+    --light-gray-color: #e6e6e6;
     --gap: 3rem;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -68,15 +72,10 @@ a {
     color: var(--white-color)
 }
 
-.secondary-bg {
-    background-color: var(--white-color)
-}
-
-
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 3.5rem var(--gap);
 }
 
 .viewed-section {
@@ -142,17 +141,12 @@ a {
     padding-bottom: 0;
 }
 
-.menu-spacing {
-    height: 5.8rem;
-}
-
 .about-content {
     position: relative;
-    top: -8rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .about-text,
@@ -171,4 +165,27 @@ a {
 .about-img img {
     max-width: 100%;
     height: auto;
+}
+
+.grid-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.grid h3 {
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.grid-content-p {
+    margin-bottom: 6rem;
 }
