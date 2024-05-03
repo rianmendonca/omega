@@ -189,3 +189,86 @@ a {
 .grid-content-p {
     margin-bottom: 6rem;
 }
+
+.plans-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.plans-content div h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.plans {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card {
+    width: 40rem;
+    height: 50rem;
+    background-color: var(--yellow-color);
+    border-radius: 1.5rem;
+    border: 0.2rem solid var(--black-color);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.050);
+}
+
+.card-title {
+    padding: 1rem 1rem;
+    border-bottom: 0.1rem solid var(--black-color);
+}
+
+.card-title h4 {
+    text-align: center;
+    margin-bottom: 0.2rem;
+    color: var(--black-color);
+    font-size: 4rem;;
+}
+
+.card-title p {
+    text-align: center;
+    margin-bottom: 0.2rem;
+    color: var(--black-color);
+    font-family: "Jersey 25", sans-serif;
+}
+
+.card-content {
+    font-size: 2rem;
+    padding-top: 2rem;
+    gap: var(--gap);
+
+}
+
+.card-content ul {
+    padding-left: 2.5rem;
+}
+
+.card-content ul li {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--black-color);
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
