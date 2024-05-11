@@ -312,6 +312,16 @@
         color: var(--black-color);
     }
 
+    .question {
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        gap: var(--gap);
+    }
+
+    .question h1 {
+        font-size: 3rem;
+    }
+
     .footer {
         text-align: center;
         font-size: 2rem;
